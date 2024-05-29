@@ -56,7 +56,7 @@ export const saveMovie = async (movies) => {
       });
     } catch (error) {
       if (error.code === 11000 && error.keyPattern && error.keyValue) {
-        console.log(`중복 키 오류입니다. 중복 된 콘텐츠는 ${content.title} 입니다.`);
+        // console.log(`중복 키 오류입니다. 중복 된 콘텐츠는 ${content.title} 입니다.`);
       } else {
         throw error;
       }
@@ -85,7 +85,7 @@ export const saveTv = async (tvs) => {
       });
     } catch (error) {
       if (error.code === 11000 && error.keyPattern && error.keyValue) {
-        console.log(`중복 키 오류입니다. 중복 된 콘텐츠는 ${content.name} 입니다.`);
+        // console.log(`중복 키 오류입니다. 중복 된 콘텐츠는 ${content.name} 입니다.`);
       } else {
         console.error(error);
         throw error;

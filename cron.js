@@ -5,11 +5,6 @@ import { saveContent } from './lib.js';
 
 dotenv.config();
 
-// https://api.themoviedb.org/3/trending/movie/day
-// https://api.themoviedb.org/3/trending/movie/week
-// https://api.themoviedb.org/3/trending/tv/day
-// https://api.themoviedb.org/3/trending/tv/week
-
 const end_points = [
   'https://api.themoviedb.org/3/trending/movie/day',
   'https://api.themoviedb.org/3/trending/movie/week',
